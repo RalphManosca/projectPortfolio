@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*Global styles*/
+
+.wrapper {
+	@apply flex justify-center items-center ;
+}
+
+/*Nav bar*/
+
+.nav-bar {
+	@apply flex items-center justify-between px-16 ;
+	height: 80px ;
+}
+
+/*Card styles*/
+span {
+	@apply block ;
+}
+
+.card {
+	@apply border rounded-xl inline-block ;
+	max-width: 500px;
+	.card-image {
+		@apply wrapper rounded-t-xl ;
+		img {
+			@apply rounded-full relative top-10 ;
+		}
+	}
+	.card-body {
+		@apply flex flex-col gap-4 p-4 pt-12 ;
+		.card-skill-pills {
+			@apply flex gap-x-1 items-center ;
+		}
+	}
+}
+
+/*Project Card*/
+
+.project-card {
+	.project-card-content {
+		height: 500px;
+		max-width: 100%;
+		width: 800px;
+		@apply wrapper flex-col gap-4 ;
+	}
+}
