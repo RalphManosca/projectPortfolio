@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const ProjectCard = ({ name, image, description, link}) => {
+const ProjectCard = ({ name, image, description, link }) => {
 
 	const [showDescription, setShowDescription] = useState(false)
 
@@ -24,15 +24,9 @@ const ProjectCard = ({ name, image, description, link}) => {
 					style={{backgroundImage: `url(${image})`}}
 				>
 					{showDescription ? 
-						<div 
-							style={{
-								backgroundColor: 'red',
-								height: '100%'
-							}}
-							className="wrapper flex-col gap-4 px-20"
-						>
-							<span className="text-center">{description}</span>
-							<a href={link}>Check out for your self</a>
+						<div className="project-card-content__hovered">
+							<span>{description}</span>
+							<a href={link} target="_blank">Check out for yourself</a>
 						</div>
 						: 
 						<span>{name}</span>

@@ -1,0 +1,9 @@
+.footer {
+	@apply wrapper p-10 gap-x-64 ;
+	// .footer-statement {
+
+	// }
+	.footer-logo-links {
+		@apply flex flex-wrap justify-evenly ;
+	}
+}

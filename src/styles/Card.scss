@@ -1,0 +1,22 @@
+/*Card styles*/
+
+.card {
+	@apply border rounded-xl inline-block ;
+	max-width: 500px;
+	.card-title,
+	.card-role {
+		@apply text-center ;
+	}
+	.card-image {
+		@apply wrapper rounded-t-xl ;
+		img {
+			@apply rounded-full relative top-10 ;
+		}
+	}
+	.card-body {
+		@apply flex flex-col gap-4 p-4 pt-12 ;
+		.card-skill-pills {
+			@apply flex gap-x-1 items-center ;
+		}
+	}
+}

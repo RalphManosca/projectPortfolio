@@ -1,0 +1,28 @@
+/*Project Card*/
+
+.project-card {
+	.project-card-content {
+		height: 500px;
+		max-width: 100%;
+		width: 800px;
+		@apply wrapper flex-col rounded-xl gap-4 ;
+		.project-card-content__hovered {
+			@apply relative wrapper flex-col gap-4 px-20 h-full ; 
+			&::before {
+				@apply rounded-xl ;
+				content: "";
+				background-color: red ;
+				position: absolute;
+				top: 0px;
+				right: 0px;
+				bottom: 0px;
+				left: 0px;
+				opacity: 0.75;
+			}
+			span,
+			a {
+				@apply relative text-center ;
+			}
+		}
+	}
+}

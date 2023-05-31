@@ -18,35 +18,63 @@ const Contact = () => {
 	}
 
 	return (
-		<>
-			<h1>Contact Page</h1>
-			<form action={handleSubmit} className="flex flex-col">
-
-				<input 
-					type="text" 
-					name="name"
-					value={emailContent.name}
-					onChange={(e) => handleChange(e)}
+		<div className="contact-form">
+			<div className="first-box">	
+				<img 
+					src="https://media.newyorker.com/photos/59095bb86552fa0be682d9d0/master/w_2560%2Cc_limit/Monkey-Selfie.jpg" 
+					alt="Contact Image"
+					style={{
+						maxWidth: '300px',
+						width: '100%'
+					}}
 				/>
-				
-				<input 
-					type="email" 
-					name="email" 
-					value={emailContent.email}
-					onChange={(e) => handleChange(e)}
-				/>
-				
-				<textarea 
-					name="message" 
-					id="message" 
-					placeholder="Say something cool ;-)"
-					value={emailContent.message}
-					onChange={(e) => handleChange(e)}
-				/>
-
-				<button>Send Message</button>
+			</div>
+			<form 
+				action={handleSubmit} 
+				className="second-box"
+			>
+				<div className="input-containers">
+					<label htmlFor="name">
+						Name
+					</label>
+					<input 
+						type="text" 
+						name="name"
+						id="name"
+						value={emailContent.name}
+						onChange={(e) => handleChange(e)}
+						style={{width: '400px'}}
+					/>
+				</div>
+				<div className="input-containers">
+					<label htmlFor="email">
+						Email
+					</label>
+					<input 
+						type="email" 
+						name="email"
+						id="email"
+						value={emailContent.email}
+						onChange={(e) => handleChange(e)}
+						style={{width: '400px'}}
+					/>
+				</div>
+				<div className="input-containers">
+					<label htmlFor="message">
+						Message
+					</label>
+					<textarea 
+						name="message" 
+						id="message" 
+						placeholder="Say something cool ;-)"
+						value={emailContent.message}
+						onChange={(e) => handleChange(e)}
+						style={{width: '400px', height: '200px', resize: 'none'}}
+					/>
+				</div>
+				<button className="submit-button">Send Message</button>
 			</form>
-		</>
+		</div>
 	)
 }
 

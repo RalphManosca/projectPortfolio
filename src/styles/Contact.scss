@@ -1,0 +1,22 @@
+/*Contact Form*/
+
+.contact-form {
+	@apply grid grid-cols-2 ;
+	.first-box,
+	.second-box {
+		@apply wrapper col-span-1 ;
+	}
+	.second-box {
+		@apply flex-col gap-4 rounded-xl bg-gray-300 py-10 ;
+		.input-containers {
+			@apply flex flex-col gap-4 ;
+			input,
+			textarea {
+				@apply rounded-md ;
+			}
+		}
+		.submit-button {
+			@apply rounded-md bg-red-500 text-white px-16 py-1 ;
+		}
+	}
+}

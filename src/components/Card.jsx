@@ -26,17 +26,17 @@ const Card = ({
 				/>
 			</div>
 			<div className="card-body">
-				<span className="card-title text-center">{ name }</span>
-				<span className="card-role text-center">{ role }</span>
+				<span className="card-title">{ name }</span>
+				<span className="card-role">{ role }</span>
 				<span className="card-description">{ description }</span>
 				<span className="card-skill-pills">
-					Skills used: {skills.map((skill) => 
-						<span style={ pillStyle }>{ skill }</span>
+					Skills used: {skills.map((skill, i) => 
+						<span style={ pillStyle } key={i}>{ skill }</span>
 					)}
 				</span>
 				<ul>
-					{achievements.map((achievement) =>
-						<li>{ achievement }</li>
+					{achievements.map((achievement, i) =>
+						<li key={i}>{ achievement }</li>
 					)}
 				</ul>
 				<span className="card-closing-comment">{ learnings }</span>
