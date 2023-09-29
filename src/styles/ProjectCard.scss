@@ -11,7 +11,7 @@
 			&::before {
 				@apply rounded-xl ;
 				content: "";
-				background-color: red ;
+				background-color: #9400FF ;
 				position: absolute;
 				top: 0px;
 				right: 0px;
@@ -21,7 +21,7 @@
 			}
 			span,
 			a {
-				@apply relative text-center ;
+				@apply relative text-center text-[#E4F1FF] ;
 			}
 		}
 	}

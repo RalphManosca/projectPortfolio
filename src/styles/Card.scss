@@ -1,7 +1,7 @@
 /*Card styles*/
 
 .card {
-	@apply border rounded-xl inline-block ;
+	@apply rounded-xl inline-block bg-white shadow-lg ;
 	max-width: 500px;
 	.card-title,
 	.card-role {

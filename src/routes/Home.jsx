@@ -6,7 +6,7 @@ import Section from '@/components/Section'
 
 const Home = () => {
 	return (
-		<>
+		<div className="home-container">
 			<Section>
 				<div className="heading-container">
 					<h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem et assumenda nihil aliquid!</h1>
@@ -46,7 +46,7 @@ const Home = () => {
 					)}
 				</div>
 			</Section>
-		</>
+		</div>
 	)
 }
 

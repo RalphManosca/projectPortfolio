@@ -65,6 +65,6 @@ export const projects = [
 		name: 'PPD Clinic Web',
 		imageBanner: 'https://chromeunboxed.com/wp-content/uploads/2022/02/Devtools-Screenshot-1.jpg',
 		projectDescription: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, architecto dolor recusandae doloremque voluptatem perspiciatis labore. Sed modi dignissimos enim quae officiis odio dolorem ab rem harum in ex incidunt iste nesciunt quidem debitis, ipsam, numquam, sunt corrupti aspernatur. Labore excepturi recusandae eum, eaque assumenda praesentium cum error enim maxime autem eligendi fugit. Mollitia repellendus reprehenderit facilis itaque perspiciatis. Unde?',
-		link: 'https://thefilipinodoctor.com/ppd-clinic/'
+		link: 'https://ppd.ph/ppd-clinic/'
 	},
 ]
